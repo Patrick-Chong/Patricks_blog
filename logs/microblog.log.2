@@ -1,0 +1,97 @@
+2021-03-20 07:40:05,129 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 07:53:07,224 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 07:53:13,097 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 07:56:23,479 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 08:00:35,444 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 08:03:54,786 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 08:12:50,882 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 08:22:23,616 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 08:23:31,945 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:46]
+2021-03-20 08:26:59,624 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:48]
+2021-03-20 08:27:12,938 ERROR: Exception on /login [GET] [in /Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/patrickchong/Desktop/microblog3/app/routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/patrickchong/Desktop/microblog3/app/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/patrickchong/Desktop/microblog3/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/patrickchong/Desktop/microblog3/app/templates/login.html", line 27, in block "content"
+    <a href="{{ url_for('reset_password_request') }}">Click to Reset It</a>
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
+2021-03-20 08:27:16,086 ERROR: Exception on /login [GET] [in /Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/patrickchong/Desktop/microblog3/app/routes.py", line 57, in login
+    return render_template('login.html', title='Sign In', form=form)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/templating.py", line 140, in render_template
+    ctx.app,
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/patrickchong/Desktop/microblog3/app/templates/login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/patrickchong/Desktop/microblog3/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/patrickchong/Desktop/microblog3/app/templates/login.html", line 27, in block "content"
+    <a href="{{ url_for('reset_password_request') }}">Click to Reset It</a>
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/flask/helpers.py", line 358, in url_for
+    endpoint, values, method=method, force_external=external
+  File "/Users/patrickchong/Desktop/microblog3/venv/lib/python3.7/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'reset_password_request'. Did you mean 'edit_profile' instead?
+2021-03-20 08:33:44,409 INFO: Microblog startup [in /Users/patrickchong/Desktop/microblog3/app/__init__.py:48]
